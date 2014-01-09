@@ -108,7 +108,7 @@ module ActiveRecord
               attr_accessible :#{configuration[:column]}
             end
 
-            before_destroy :reload_position
+            #before_destroy :reload_position
             after_destroy :decrement_positions_on_lower_items
             before_update :check_scope
             after_update :update_positions
